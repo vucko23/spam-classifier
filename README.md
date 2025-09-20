@@ -1,6 +1,6 @@
 # 📧 Spam Classifier (TF-IDF + Naive Bayes)
 
-![Python](https://img.shields.io/badge/Python-3.11-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.13-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.4-orange.svg)
 ![NLP](https://img.shields.io/badge/NLP-Text_Classification-yellow.svg)
