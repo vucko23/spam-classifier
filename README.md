@@ -1,11 +1,17 @@
 # 📧 Spam Classifier (TF-IDF + Naive Bayes)
 
-This project implements a simple **text classification pipeline** to detect whether a message is **spam** or **ham** (not spam).  
-It uses **TF-IDF** for feature extraction and **Naive Bayes** as the classification model.  
+![Python](https://img.shields.io/badge/Python-3.11-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.4-orange.svg)
+![NLP](https://img.shields.io/badge/NLP-Text_Classification-yellow.svg)
+
+This project implements a simple **text classification pipeline** to detect whether a message is **spam** or **ham** (not spam).
+It uses **TF-IDF** for feature extraction and **Naive Bayes** as the classification model.
 
 ---
 
 ## 🚀 Features
+
 - Preprocessing of SMS text data
 - Train/test split with stratification
 - TF-IDF vectorization
@@ -16,6 +22,7 @@ It uses **TF-IDF** for feature extraction and **Naive Bayes** as the classificat
 ---
 
 ## 📂 Project Structure
+
 ```
 spam-classifier/
 │── data/
@@ -30,14 +37,16 @@ spam-classifier/
 ---
 
 ## 📊 Dataset
-We used the **[SMS Spam Collection Dataset](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)** from Kaggle.  
 
-- `label` → spam or ham  
-- `text` → SMS message  
+We used the **[SMS Spam Collection Dataset](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)** from Kaggle.
+
+- `label` → spam or ham
+- `text` → SMS message
 
 ---
 
 ## ▶️ How to Run
+
 ```bash
 # create virtual environment
 python3 -m venv .venv
@@ -50,11 +59,12 @@ pip install -r requirements.txt
 python spam_classifier.py --data data/spam.csv
 ```
 
-The script will print evaluation metrics and save the model (`model.joblib`).  
+The script will print evaluation metrics and save the model (`model.joblib`).
 
 ---
 
 ## ✅ Results
+
 ```
 Accuracy: 0.9686
 
@@ -76,14 +86,17 @@ Confusion matrix:
 ## 📸 Screenshots
 
 ### Model Results
+
 ![Results](assets/results.png)
 
 ### Project Structure
+
 ![Structure](assets/project-structure.png)
 
 ---
 
 ## 🔮 Next Steps
-- Try `LinearSVC` and compare with Naive Bayes  
-- Add hyperparameter tuning with `GridSearchCV`  
-- Deploy as a minimal **FastAPI** endpoint for predictions  
+
+- Try `LinearSVC` and compare with Naive Bayes
+- Add hyperparameter tuning with `GridSearchCV`
+- Deploy as a minimal **FastAPI** endpoint for predictions
